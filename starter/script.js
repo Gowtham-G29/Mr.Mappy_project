@@ -320,6 +320,13 @@ class App {
         this._renderWorkout(work);
      })
 
+    };
+
+    
+    //call the reset method will reset the local storage by reload
+    _reset(){
+        localStorage.removeItem('workouts');
+        location.reload();
     }
 
 
